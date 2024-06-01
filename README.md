@@ -20,6 +20,21 @@ StreamSync is a web application that allows you and your friends to watch videos
 3. **Add Video:** Upload a video file or paste a video URL to start watching. 📂🔗
 4. **Watch Together:** Everyone in the session can control the playback. Enjoy the video in sync! 🍿🎉
 
+## Branch Naming Convention 🌿
+
+To maintain consistency and organization in our development process, we follow a specific branch naming convention:
+
+- **Feature Branches**: Begin with `feature/`, followed by a descriptive name of the feature being developed.
+  Example: `feature/add-video-player`
+
+- **Bug Fix Branches**: Begin with `bug/`, followed by a brief description of the issue being addressed.
+  Example: `bug/fix-video-sync-issue`
+
+- **Chore Branches**: Begin with `chore/`, followed by a brief description of the task or maintenance being performed.
+  Example: `chore/update-dependencies`
+
+By adhering to this convention, we can easily identify the purpose of each branch and streamline our development workflow.
+
 ## Getting Started 🛠️
 
 To run StreamSync locally:
