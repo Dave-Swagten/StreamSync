@@ -26,7 +26,7 @@ To run StreamSync locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/StreamSync.git
+   git clone https://github.com/Dave-Swagten/StreamSync.git
    ```
 2. Navigate to the project directory:
    ```bash
