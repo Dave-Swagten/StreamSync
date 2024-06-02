@@ -1,14 +1,22 @@
 const express = require("express");
 const app = express();
+const path = require("path");
 const server = require("http").createServer(app);
 const cors = require("cors");
+const indexRouter = require("./routes/index.route");
 
 // Enable All CORS Requests
 //TODO: This is not secure, change this on production
 app.use(cors());
 
-// Serve static files from the "public" directory
-app.use(express.static("public"));
+// Use Pug as the view engine
+app.set("view engine", "pug");
+
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, "public")));
+
+// Routes
+app.use("/", indexRouter); //Index route
 
 // Create a new Socket.IO instance with CORS enabled
 const io = require("socket.io")(server, {
